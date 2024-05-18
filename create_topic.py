@@ -9,5 +9,7 @@ admin_client = KafkaAdminClient(
 
 topic_list = []
 # TODO make more then 2 partition in future
+# admin_client.delete_topics([KAFKA_TOPIC])
+
 topic_list.append(NewTopic(name=KAFKA_TOPIC, num_partitions=2, replication_factor=1))
 admin_client.create_topics(new_topics=topic_list, validate_only=False)

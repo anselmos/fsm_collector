@@ -3,3 +3,6 @@ run_kafka:
 
 run_collector:
 	pipenv run python main.py
+
+create_topic:
+	pipenv run python create_topic.py
